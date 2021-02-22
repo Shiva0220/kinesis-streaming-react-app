@@ -22,10 +22,8 @@ function App() {
     };
     return (
     <div className="App">
-      <header className="App-header">
-          <VideoComp/>
-          <Form formInfo={formInfo}/>
-      </header>
+        <VideoComp/>
+        <Form formInfo={formInfo}/>
     </div>
   );
 }
