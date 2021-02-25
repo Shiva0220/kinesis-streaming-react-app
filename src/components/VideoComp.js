@@ -2,13 +2,30 @@ import React from 'react';
 import '../loader.css';
 
 export const VideoComp = (props) => {
-    return <div className="row mt-3 mb-3">
-        <div className="col-md-12">
-            <h1>Amazon Kinesis Video Streams Media Viewer</h1>
-            Documentation:
-            <a href="https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_GetHLSStreamingSessionURL.html">HLS</a>
-            -
-            <a href="https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_GetDASHStreamingSessionURL.html">DASH</a>
+    return <div className="col-md-8">
+        <div id="playerContainer">
+
+            <video id="hlsjs" className="player" controls autoPlay></video>
+            <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+            <video id="videojs" className="player video-js vjs-default-skin" controls autoPlay></video>
+            <link rel="stylesheet" href="https://vjs.zencdn.net/6.6.3/video-js.css"/>
+            <script src="https://vjs.zencdn.net/6.6.3/video.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+
+            <video id="shaka" className="player" controls autoPlay></video>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/2.4.1/shaka-player.compiled.js">
+            </script>
+
+            <video id="dashjs" className="player" controls autoPlay=""></video>
+            <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
         </div>
-    </div>
+
+        {/*<h3 style= "margin-top: 20px;">Logs</h3>*/}
+        {/*<div className="card bg-light mb-3">*/}
+        {/*    <pre id="logs" className="card-body text-monospace"*/}
+        {/*         style="font-family: monospace; white-space: pre-wrap;"></pre>*/}
+        {/*</div>*/}
+    </div>;
 }
