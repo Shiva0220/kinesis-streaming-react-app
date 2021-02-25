@@ -30,15 +30,11 @@ class Form extends Component{
     };
 
     render() {
-        return <div className="container mb-3">
-            <div className="row">
-                <div className = 'col-md-4 alignLeft'>
-                    {this.state.formElements.map( item => item.elementType === 'select'
-                        ? <SelectElement ref={this[item.id]} key={item.id} formElementInfo={item}/>
-                        : <InputElement ref={this[item.id]} key={item.id} formElementInfo={item}/>)}
-                    <button id="start" type="submit" onClick={this.onSubmit}>Start Playback</button>
-                </div>
-            </div>
+        return <div className='col-md-4 alignLeft'>
+            {this.state.formElements.map(item => item.elementType === 'select'
+                ? <SelectElement ref={this[item.id]} key={item.id} formElementInfo={item}/>
+                : <InputElement ref={this[item.id]} key={item.id} formElementInfo={item}/>)}
+            <button id="start" type="submit" onClick={this.onSubmit}>Start Playback</button>
         </div>;
     }
 }

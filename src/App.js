@@ -3,6 +3,7 @@ import './App.css';
 import Form from "./components/FormElements/Form";
 import {VideoComp} from "./components/VideoComp";
 import {HeaderComp} from "./components/HeaderComp";
+import React from "react";
 
 function App() {
     const formInfo = {
@@ -128,9 +129,14 @@ function App() {
     };
     return (
     <div className="App">
-        <HeaderComp/>
-        <Form formInfo={formInfo}/>
-        <VideoComp/>
+        <div className="container mb-3">
+            <HeaderComp/>
+            <div className="row"></div>
+            <div className="row">
+                <Form formInfo={formInfo}/>
+                <VideoComp/>
+            </div>
+        </div>
     </div>
   );
 }
