@@ -127,6 +127,7 @@ function App() {
             }
         ]
     };
+    console.log("Started rendering")
     return (
     <div className="App">
         <div className="container mb-3">

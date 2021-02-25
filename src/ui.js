@@ -1,4 +1,12 @@
-// import './jquery.min'
+// import AWS from '../node_modules/aws-sdk'
+// import $ from '../node_modules/jquery'
+// import Hls from '../node_modules/hls/'
+// import shaka from '../node_modules/shaka-player'
+// import video from '../node_modules/video'
+// import videojs from '../node_modules/videojs-contrib-hls'
+// import '../../ui'
+// import dashjs from '../node_modules/dash/'
+//
 //
 // configureLogging();
 //
