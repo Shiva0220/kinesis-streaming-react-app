@@ -25,7 +25,7 @@ export const VideoComp = (props) => {
         <h3 style={{"marginTop": "20px"}}>Logs</h3>
         <div className="card bg-light mb-3">
             <pre id="logs" className="card-body text-monospace"
-                 style={{"fontFamily": "monospace", "whiteSpace": "pre-wrap"}}/>
+                 style={{"fontFamily": "monospace", "whiteSpace": "pre-wrap", "textAlign": "left"}}/>
         </div>
     </div>;
 }

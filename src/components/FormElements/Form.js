@@ -28,7 +28,7 @@ class Form extends Component{
             console.log("Ref: " + info.id + ": " + this[info.id].current.value)
         })
         var protocol = this['protocol'].current.value;
-        var streamName = this['streamName'].current.value;
+        let streamName = $('#streamName').val();
 
         // Step 1: Configure SDK Clients
         var options = {
